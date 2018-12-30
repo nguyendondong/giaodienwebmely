@@ -1,0 +1,98 @@
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.space-2{
+    letter-spacing: 2px; 
+}
+.btn-primary{
+    border-radius: 33px !important;
+    font-size: 15px;
+    margin-left: 30px;
+}
+#header{
+    width: 100%;
+    .head-area{
+        height: 100%;
+        
+        .navbar{
+            padding: 20px 1rem !important;
+            border-bottom: 1px solid black;
+            height: 90px;
+            .nav-item{
+                .nav-link{
+                    padding-right: 1.5rem;
+                }
+                
+            }
+        }
+    }
+}
+.welcome{
+    position: relative;
+    z-index: 1;
+    height: 850px;
+    background-color: #f2f4f8;
+    overflow: hidden;
+    padding-top: 90px;
+    h2{
+        margin-bottom: 30px !important;
+        color: #3a3a3a !important;
+        font-size: 5rem;
+    }
+    P{  font-size: 18px;
+        padding-bottom: 5%;
+        font-weight: 400;
+        line-height: 1.9;
+
+    }
+    .btn-primary{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .style1{
+        border-radius: 50%;
+        height: 500px;
+        position: absolute;
+        right: -10%;
+        top: 50%;
+        width: 500px;
+        z-index: -5;
+        opacity: 0.15;
+        background-color: #0984e3;
+    }
+    .style2{
+        border-radius: 50%;
+        bottom: 150px;
+        height: 300px;
+        position: absolute;
+        right: 150px;
+        width: 300px;
+        z-index: 5;
+        opacity: 0.2;
+        background-color: #0984e3;
+        
+    }
+    .style3{
+        border-radius: 50%;
+        bottom: 20px;
+        height: 200px;
+        position: absolute;
+        right: 280px;
+        width: 200px;
+        z-index: 9;
+        opacity: 0.15;
+        background-color: #0984e3;
+    }
+    .style4{
+        border-radius: 50%;
+        bottom: 385px;
+        height: 100px;
+        position: absolute;
+        right: 350px;
+        width: 100px;
+        z-index: 5;
+        opacity: 0.11;
+        background-color: #0984e3;
+    }
+}
