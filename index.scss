@@ -10,6 +10,24 @@ body{
     font-size: 15px;
     margin-left: 30px;
 }
+.padt-1{
+    padding-top: 45px;
+}
+.padp-1{
+    padding-bottom: 45px;
+}
+
+.bg-blue{
+    background-color: #0984e3;
+}
+.bg-gray{
+    background-color: #f2f4f8;
+}
+.bg-gray:hover{
+    background-color: #0984e3;
+    color: #f2f4f8;
+    transition-delay: 0.2s;
+}
 #header{
     width: 100%;
     .head-area{
@@ -17,7 +35,7 @@ body{
         
         .navbar{
             padding: 20px 1rem !important;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #f2f4f8;
             height: 90px;
             .nav-item{
                 .nav-link{
@@ -94,5 +112,80 @@ body{
         z-index: 5;
         opacity: 0.11;
         background-color: #0984e3;
+    }
+}
+.Bright{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    h3{
+        line-height: 50px;
+        font-size: 33px;
+        span{
+            color:#0984e3;
+        }
+    }
+    .content-product{
+        padding: 25px 25px;
+    
+    .content-item{
+        padding: 25px 40px 25px 40px;;
+        position: relative;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        h3{
+            font-size: 20px;
+            font-weight: 300;
+            
+        
+        }
+        .icon{
+            top: 35%;
+            position: absolute;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            background: #0984e3;
+            color: #f2f4f8;
+            left: 92%;
+            i{
+                position: relative;
+                top:14px;
+                z-index: 2;
+            }
+        }
+        .icon::before{
+            
+            content: "";
+            height: 3px;
+            left: 50%;
+            margin-top: -1.5px;
+            position: absolute;
+            top: 50%;
+            width: 120px;
+            z-index: 1;
+            background: #0984e3;
+
+        }
+        .icon::after{
+            
+            content: "";
+            height: 20px;
+            border-radius: 50%;
+            left: calc(50% + 110px); 
+            margin-top: -1.5px;
+            position: absolute;
+            top: 36%;
+            width: 20px;
+            z-index: 1;
+            background: #0984e3;
+            animation: sonarWave 2s;
+
+        }
+    }
+}
+    .img-product{
+        img{
+            width: 100%;
+        }
     }
 }
