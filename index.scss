@@ -13,7 +13,7 @@ body{
 .padt-1{
     padding-top: 45px;
 }
-.padp-1{
+.padb-1{
     padding-bottom: 45px;
 }
 
@@ -24,10 +24,20 @@ body{
     background-color: #f2f4f8;
 }
 .bg-gray:hover{
-    background-color: #0984e3;
-    color: #f2f4f8;
-    transition-delay: 0.2s;
+    background-color: #f2f4f8;
+    -webkit-animation-name: bghover;
+    -webkit-animation-duration: 4s; 
+    animation-name: bghover;
+    animation-duration: 4s;
 }
+@-webkit-keyframes bghover {
+    from {background-color: #f2f4f8;}
+    to {background-color: #0984e3;}
+  }
+  @keyframes bghover {
+    from {background-color: #f2f4f8;}
+    to {background-color:#0984e3 ;}
+  }
 #header{
     width: 100%;
     .head-area{
@@ -49,7 +59,7 @@ body{
 .welcome{
     position: relative;
     z-index: 1;
-    height: 850px;
+    height: 100%;
     background-color: #f2f4f8;
     overflow: hidden;
     padding-top: 90px;
@@ -117,6 +127,7 @@ body{
 .Bright{
     padding-top: 90px;
     padding-bottom: 90px;
+    height: 100%;
     h3{
         line-height: 50px;
         font-size: 33px;
@@ -149,9 +160,50 @@ body{
             left: 92%;
             i{
                 position: relative;
-                top:14px;
+                top: -261px;
                 z-index: 2;
             }
+            .sonar-wrapper {
+                position: relative;
+                z-index: 1;
+            
+                padding: 8rem 0;
+                .sonar-emitter {
+                    top:-112px;
+                    position: relative;
+                    margin: 0 auto;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 9999px;
+                    background-color: #2e84e3;
+                    left: calc(50% + 105px);
+                    .sonar-wave {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 9999px;
+                        background-color: #2e84e3;
+                        opacity: 0;
+                        z-index: 1;
+                        pointer-events: none;
+                      }
+                      .sonar-wave {
+                        animation: sonarWave 2s linear infinite;
+                      }
+                      
+                      @keyframes sonarWave {
+                        from {
+                          opacity: 0.4;
+                        }
+                        to {
+                          transform: scale(3);
+                          opacity: 0;
+                        }
+                      }
+                  }
+              }
         }
         .icon::before{
             
@@ -166,26 +218,90 @@ body{
             background: #0984e3;
 
         }
-        .icon::after{
-            
-            content: "";
-            height: 20px;
-            border-radius: 50%;
-            left: calc(50% + 110px); 
-            margin-top: -1.5px;
-            position: absolute;
-            top: 36%;
-            width: 20px;
-            z-index: 1;
-            background: #0984e3;
-            animation: sonarWave 2s;
-
-        }
+        
     }
 }
     .img-product{
         img{
             width: 100%;
+        }
+    }
+}
+.video_area{
+    background-image: url('./image/video-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    position: relative;
+    .video-text{
+        top: 35%;;
+        justify-content: center;
+        position: relative;
+        h2{
+            font-size: 4em;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: .5rem;
+            font-family: inherit;
+        }
+    }
+
+}
+.video_area::before{
+    content: "";
+    background-color: #0984e3;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+}
+.about_app_area{
+    padding-top: 100px;
+    height: 100%;
+    .about-img{
+        position: relative;
+        height: auto;
+        display: block;
+        .big-img{
+            position: relative;
+            z-index: 1;
+        }
+        .small-img{
+            position: absolute;
+            left: 44%;
+            top: 149px;
+
+        }
+    }
+    .about-text{
+        padding-top: 150px;
+        height: 100%;
+        h3{
+            font-size: 2.5em;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #7b7b7b;
+            font-weight: 400;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+        .btn-primary{
+            border: none;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 20px 50px;
+            position: relative;
+            z-index: 1;
+            border-radius: 50px;
+            line-height: 1;
+            margin: 0%;
+            
         }
     }
 }
