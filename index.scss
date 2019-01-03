@@ -2,6 +2,35 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+.color{ 
+    display: block;
+    margin: 1.2rem 0;
+    font-size: 26px;
+    font-size: 2.6rem;
+    color: #0984e3;
+    color: #FC466B;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-gradient(linear,left top,left bottom,from(#FC466B),to(#0984e3));
+    background: -o-gradient(linear,left top,left bottom,from(#FC466B),to(#0984e3));
+    -webkit-background-clip: text;
+  }
+  
+  .color:before { 
+      content: '';
+  }
+        
+   
+
+.color-p{
+    color: #7b7b7b;
+}
+h3{
+    line-height: 50px;
+    font-size: 45px;
+    span{
+        color:#0984e3;
+    }
+}
 .space-2{
     letter-spacing: 2px; 
 }
@@ -20,6 +49,10 @@ body{
 .bg-blue{
     background-color: #0984e3;
 }
+.gray{
+    background-color: #f2f4f8;
+
+}
 .bg-gray{
     background-color: #f2f4f8;
 }
@@ -37,6 +70,25 @@ body{
   @keyframes bghover {
     from {background-color: #f2f4f8;}
     to {background-color:#0984e3 ;}
+  }
+  .text-hover{
+    color: #3a3a3a;
+
+}
+.text-hover:hover{
+    color: #3a3a3a;
+    -webkit-animation-name: h4hover;
+    -webkit-animation-duration: 2s; 
+    animation-name: h4hover;
+    animation-duration: 2s;
+}
+@-webkit-keyframes h4hover {
+    from {color: #3a3a3a;}
+    to {color: #0984e3;}
+  }
+  @keyframes h4hover {
+    from {color: #3a3a3a;}
+    to {color:#0984e3 ;}
   }
 #header{
     width: 100%;
@@ -128,13 +180,7 @@ body{
     padding-top: 90px;
     padding-bottom: 90px;
     height: 100%;
-    h3{
-        line-height: 50px;
-        font-size: 33px;
-        span{
-            color:#0984e3;
-        }
-    }
+    
     .content-product{
         padding: 25px 25px;
     
@@ -304,4 +350,81 @@ body{
             
         }
     }
+}
+
+.using_benefits_area{
+    width: 100%;
+    .using-area{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        
+        }
+    }
+.work{
+    .work-area{
+        position: relative;
+        margin-bottom: 50px;
+        
+    }
+}
+.testimonial_area{
+    background-image: url('./image/testimonials.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    .casuarousel-area{
+        padding-top: 35px;
+        height: 100%;
+        .carousel-indicators li{
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+        }
+        .carousel{
+            
+            .carousel-inner{
+                height: 100%;;
+                .name{
+                    position: relative;
+                    top: 150px;
+                }
+                .rating{
+                    position: relative;
+                    top: 100px;
+                    i{color: #ff9800;
+                        font-size: 20px;
+                    }
+                }
+                .carousel-caption{
+                    bottom: -15%;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                .img-carousel{
+                    position: relative;
+                    border: 3px solid #ffffff;
+                    border-radius: 50%;
+                    height: 80px;
+                    margin: 0 auto 30px;
+                    padding: 3px;
+                    width: 80px;
+                }
+            }
+        }
+        
+    }
+}
+.testimonial_area::before{
+    content: "";
+    background: #3a3a3a;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
 }
