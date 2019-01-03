@@ -296,7 +296,7 @@ h3{
 }
 .video_area::before{
     content: "";
-    background-color: #0984e3;
+    background:linear-gradient(to right, #0d104d, #28408b);
     background-position: center center;
     background-size: cover;
     width: 100%;
