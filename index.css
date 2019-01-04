@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  background: #f2f4f8;
 }
 
 .color {
@@ -73,18 +74,22 @@ h3 span {
 @-webkit-keyframes bghover {
   from {
     background-color: #f2f4f8;
+    color: #3a3a3a;
   }
   to {
     background-color: #0984e3;
+    color: white;
   }
 }
 
 @keyframes bghover {
   from {
     background-color: #f2f4f8;
+    color: #3a3a3a;
   }
   to {
     background-color: #0984e3;
+    color: white;
   }
 }
 
@@ -447,6 +452,7 @@ h3 span {
   border-radius: 50%;
   height: 20px;
   width: 20px;
+  border: 5px solid white;
 }
 
 .testimonial_area .casuarousel-area .carousel .carousel-inner {
@@ -494,5 +500,32 @@ h3 span {
   width: 100%;
   height: 100%;
   opacity: 0.7;
+}
+
+.Features .features-text {
+  position: relative;
+}
+
+.Features .features-text .icon-text {
+  position: absolute;
+}
+
+.Features .features-text .fea-text {
+  position: absolute;
+  margin-left: 16%;
+}
+
+.Features .boder-features {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.Features .boder-features::before {
+  content: '';
+  width: 100%;
+  height: 80%;
+  border-bottom: 3px solid #aeb1b945;
+  position: absolute;
 }
 /*# sourceMappingURL=index.css.map */
