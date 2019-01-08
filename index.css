@@ -2,6 +2,21 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.right {
+  position: relative;
+  float: right;
+}
+
+.left {
+  position: relative;
+  float: left;
+}
+
+.blue {
+  background-color: #0984e3 !important;
+  color: #f6f6f7;
+}
+
 .color {
   display: block;
   margin: 1.2rem 0;
@@ -169,6 +184,9 @@ h3 span {
 .welcome .btn-primary {
   padding-left: 35px;
   padding-right: 35px;
+  margin: 0 auto;
+  width: 33%;
+  line-height: 200%;
 }
 
 .welcome .style1 {
@@ -505,6 +523,10 @@ h3 span {
   opacity: 0.7;
 }
 
+.p-r {
+  position: relative;
+}
+
 .Features .features-area {
   position: relative;
 }
@@ -571,5 +593,190 @@ h3 span {
 
 .owl-item:not(.center) > div:hover {
   opacity: .75;
+}
+
+.Pricing .box-price {
+  position: relative;
+  background: #f6f6f7;
+  border-radius: 20px;
+}
+
+.Pricing .box-price .price {
+  font-size: 60px;
+}
+
+.Pricing .box-price .description {
+  padding-bottom: 20px;
+}
+
+.Pricing .box-price .btn-primary {
+  margin: 0 auto;
+  width: 49%;
+}
+
+.top {
+  top: -20px;
+  height: 108%;
+}
+
+.top::before {
+  content: "Most Popular";
+  background: #2e84e3;
+  height: 40px;
+  width: 160px;
+  position: absolute;
+  right: 94px;
+  padding: 8px;
+  top: -15px;
+  color: #f2f4f8;
+}
+
+.total_subscriber {
+  background-image: url("./image/call-to-action.jpg");
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.total_subscriber .btn-primary {
+  width: 20%;
+  line-height: 40px;
+}
+
+.total_subscriber::before {
+  content: "";
+  background: #3a3a3a;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.creat-team-area .creat-team-tittle .line {
+  margin: 15px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f4f8;
+  margin-bottom: 15px;
+}
+
+.creat-team-area .creat-team-img img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.FAQ .FAQ-box .single-faq {
+  margin-bottom: 15px;
+}
+
+.FAQ .FAQ-box .single-faq p {
+  margin: 0;
+  position: relative;
+}
+
+.FAQ .FAQ-box .single-faq p .btn-default {
+  width: 100%;
+  background-color: #f6f6f7;
+  padding: 15px 40px 15px 20px;
+}
+
+.FAQ .FAQ-box .single-faq p .btn-default .open {
+  right: 27px;
+  position: absolute;
+}
+
+.FAQ .FAQ-box .single-faq p .btn-default .close {
+  right: 27px;
+  position: absolute;
+}
+
+.FAQ .FAQ-box .single-faq p .btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.FAQ .FAQ-box .single-faq .card {
+  border: none;
+}
+
+.FAQ .find-answer {
+  background-color: #f6f6f7;
+}
+
+.FAQ .find-answer .btn-primary {
+  width: 49%;
+  margin-bottom: 10px;
+  line-height: 37px;
+}
+
+.FAQ .find-answer .btn-primary i {
+  margin-right: 3px;
+}
+
+.FAQ .find-answer .btn-primary:hover {
+  background: #f2f4f8;
+  color: #0984e3;
+  border: none;
+  -webkit-box-shadow: 3px 4px 20px 0 #00000026 !important;
+          box-shadow: 3px 4px 20px 0 #00000026 !important;
+}
+
+.newsletter_area {
+  background-image: url("./image/newsletter.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.newsletter_area .form {
+  width: 400px;
+  height: 55px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: none;
+}
+
+.newsletter_area .btn-primary {
+  height: 55px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.newsletter_area::before {
+  content: "";
+  background: #3a3a3a;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.Our-History .time-line-area {
+  height: 100%;
+}
+
+.Our-History .time-line-area .time-line-singer {
+  position: relative;
+}
+
+.Our-History .time-line-area .time-line-singer .time-line-text {
+  width: calc(50% - 50px);
+  background-color: #f2f4f8;
+  padding: 12px;
+}
+
+.time-line-area::before {
+  content: "";
+  border-right: 1px solid #f2f4f8;
+  left: calc(100% + 49px);
+  height: 100%;
+  position: absolute;
 }
 /*# sourceMappingURL=index.css.map */
