@@ -772,11 +772,151 @@ h3 span {
   padding: 12px;
 }
 
+.Our-History .time-line-area .time-line-singer .time-line-icon {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  left: 48.5%;
+  -webkit-box-shadow: 0 0 25px #00000026;
+          box-shadow: 0 0 25px #00000026;
+  background-color: #0984e3;
+}
+
+.Our-History .time-line-area .time-line-singer .time-line-icon .far {
+  font-size: 23px !important;
+  padding: 8px 10px;
+}
+
+.Our-History .time-line-area .time-line-singer .time-line-icon .fas {
+  font-size: 23px !important;
+  padding: 8px 11px;
+}
+
+.Our-History .time-line-area .time-line-singer .time-line-icon .fab {
+  font-size: 23px !important;
+  padding: 8px 11px;
+}
+
+.Our-History .time-line-area .left::after {
+  content: "";
+  background-color: #f2f4f8;
+  left: calc(43%);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 14px;
+  z-index: -1;
+}
+
+.Our-History .time-line-area .right::after {
+  content: "";
+  background-color: #f2f4f8;
+  left: calc(53%);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 20px;
+  z-index: -1;
+}
+
 .time-line-area::before {
   content: "";
-  border-right: 1px solid #f2f4f8;
-  left: calc(100% + 49px);
+  border-right: 1px solid #7b7b7b33;
+  left: calc(50.1%);
   height: 100%;
   position: absolute;
+  z-index: -1;
+}
+
+.download-app {
+  background-color: #0984e3;
+  width: 100%;
+  position: relative;
+}
+
+.download-app .img-app {
+  width: 100%;
+}
+
+.download-app .img-app img {
+  width: 100%;
+}
+
+.download-app .btn {
+  border: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px 42px;
+  z-index: 1;
+  border-radius: 50px;
+  line-height: 1.3;
+  background-color: #f2f4f8;
+  color: #0984e3;
+  width: 17%;
+}
+
+.download-app .btn:hover {
+  -webkit-box-shadow: 5px 4px 20px 5px #f2f4f8;
+          box-shadow: 5px 4px 20px 5px #f2f4f8;
+}
+
+.download-app .button-app {
+  position: relative;
+}
+
+.map-area {
+  width: 100%;
+  height: 500px;
+  z-index: 0;
+  position: relative;
+}
+
+.message_area {
+  height: 100%;
+}
+
+.message_area .text-message {
+  width: 100%;
+  padding: 25px;
+  position: relative;
+  background-color: #f2f4f8;
+  top: -200px;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.message_area .text-message textarea {
+  height: 200px;
+}
+
+.message_area .text-message .btn {
+  line-height: 44px;
+  width: 21%;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+.message_area .form-control {
+  height: 50px;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.message_area .form-control:focus {
+  border-color: #0984e3;
+}
+
+.footer-area {
+  position: relative;
+  top: -180px;
 }
 /*# sourceMappingURL=index.css.map */
